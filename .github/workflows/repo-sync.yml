@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         persist-credentials: false
-        ref:  feature/merge-upstream
+        ref:  sync-upstream
     # - name: sync repo to breanch
     #   uses: repo-sync/github-sync@v2
     #   with:
@@ -22,7 +22,7 @@ jobs:
       id: sync
       uses: aormsby/Fork-Sync-With-Upstream-action@v3.2
       with:
-        target_sync_branch: feature/merge-upstream
+        target_sync_branch: sync-upstream
         # REQUIRED 'target_repo_token' exactly like this!
         target_repo_token: ${{ secrets.GITHUB_TOKEN }}
         upstream_sync_branch: master
