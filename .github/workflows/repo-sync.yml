@@ -10,6 +10,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         persist-credentials: false
+        ref:  feature/merge-upstream
     # - name: sync repo to breanch
     #   uses: repo-sync/github-sync@v2
     #   with:
