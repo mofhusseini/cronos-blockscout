@@ -16,7 +16,7 @@ jobs:
         source_repo: https://github.com/blockscout/blockscout
         source_branch: master
         destination_branch: sync-upstream
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.REPO_SYNC_PAT }}
     # - name: Sync upstream changes
     #   id: sync
     #   uses: aormsby/Fork-Sync-With-Upstream-action@v3.2
